@@ -6,12 +6,11 @@ This is **not** the developer's official website. It's an independent template/s
 
 ---
 
-## ⚠️ Important: domain name conflict
+## Domain
 
-The brief asked for the placeholder domain `bedokriseresidences.sg`. **A web search while building this site turned up an already-existing, apparently live site at `www.bedokriseresidences.sg`** (indexed with the title "Bedok Rise Residences | New Launch Q2 2027 | Allgreen Properties"). This may be the real official developer/agent marketing site, or a speculative site cashing in on the GLS news — either way:
+This site is configured for **`bedokrise-residences.com.sg`** (all internal links, canonical tags, Open Graph tags, `sitemap.xml`, and the deploy workflow's `server-dir` point here).
 
-- **No content, text, or images were fetched or copied from that domain.** Everything on this microsite was written from scratch using only factual data points (address, land price, unit count, tenure, etc.) drawn from public GLS tender news coverage (EdgeProp, ERA, 99.co, Forbes, Huttons — see "Sources" below).
-- **Do not deploy this site to `bedokriseresidences.sg`.** All internal links, canonical tags, Open Graph tags and the `sitemap.xml` currently point to that placeholder domain purely as a stand-in, per the original build instructions. You must pick and register a different domain (or confirm you have rights to that one) before going live, then find-and-replace the domain across all files (see "Before you deploy," below).
+Note for context: while researching, a web search turned up an already-existing, apparently live site at `www.bedokriseresidences.sg` (no hyphen, different TLD — indexed with the title "Bedok Rise Residences | New Launch Q2 2027 | Allgreen Properties"), which may be the real official developer/agent marketing site or a speculative land-grab off the GLS news. **No content, text, or images were fetched or copied from that domain** — everything here was written from scratch using only factual data points (address, land price, unit count, tenure, etc.) drawn from public GLS tender news coverage (EdgeProp, ERA, 99.co, Forbes, Huttons — see "Sources" below). `bedokrise-residences.com.sg` is a distinct domain from that one; confirm you control/have registered it before deploying.
 
 ## What's real vs. placeholder
 
@@ -37,19 +36,19 @@ The brief asked for the placeholder domain `bedokriseresidences.sg`. **A web sea
 
 ## What was NOT done (per constraints)
 
-- **No images, renders, or logos were downloaded from anywhere.** Every place the source template would have a photo, artist's impression, or masterplan render instead uses a hand-built CSS/SVG placeholder block with a visible caption: *"Artist's Impression — Placeholder, replace with official image."*
+- **No images, renders, or logos were downloaded from anywhere, and no placeholder graphics were left in their place.** The site previously used hand-built CSS/SVG placeholder blocks (captioned "Artist's Impression — Placeholder, replace with official image") everywhere the source template would have a photo, artist's impression, or masterplan render. Those blocks — and the sections built around them — have since been removed entirely, with surrounding layouts (two-column grids, hero backdrops, etc.) restructured so the remaining copy reads cleanly at full width. The site currently ships with **no photos, renders, or maps at all**; these will be added once real assets are available from Allgreen Properties.
 - **No Allgreen Properties logo was copied.** The footer and developer page use a plain text/CSS wordmark ("ALLGREEN PROPERTIES") labelled "Wordmark placeholder."
 - **No sentences were copied** from the Thomson Reserve source template or from any competitor Bedok Rise Residences site. All copy was written fresh; only plain factual data points (which are not copyrightable) were reused.
 - No git remote was added, no GitHub repo was created, and nothing was pushed — that requires your own GitHub account and explicit go-ahead.
 
 ## What you still need to supply before this goes live
 
-1. **Real photography / renders / logo.** Replace every `.art-placeholder` block (search for `art-placeholder` across the HTML files) with actual artist's impressions once Allgreen releases them, and swap the footer/developer-page wordmark for the real Allgreen Properties logo file.
-2. **A real domain.** See the conflict note above — do not use `bedokriseresidences.sg` without confirming you own/control it. Once you've picked one, find-and-replace `bedokriseresidences.sg` across all 25 HTML files, `sitemap.xml`, and `.github/workflows/deploy.yml`.
+1. **Real photography / renders / logo.** The image/photo sections were removed outright rather than left as placeholders, so once Allgreen releases official artist's impressions, site plans, or masterplan renders, they'll need to be added back into the relevant pages (hero banners, the project-overview/neighbourhood/developer/floor-plan/site-plan/location/landmark sections, etc.) as real `<img>` assets — there's no `.art-placeholder` block left to swap out. Also swap the footer/developer-page wordmark for the real Allgreen Properties logo file.
+2. **Confirm domain registration.** The site is wired for `bedokrise-residences.com.sg` — make sure it's actually registered/controlled by you before going live (see "Domain" note above).
 3. **Real pricing, unit mix, site plan and floor plans** once the developer releases them — every page that currently says "TBC" has a clearly marked spot to drop in the real figures.
 4. **SiteGround (or chosen host) FTPS secrets** for the GitHub Actions deploy workflow: `SITEGROUND_FTP_SERVER`, `SITEGROUND_FTP_USERNAME`, `SITEGROUND_FTP_PASSWORD` as repo secrets, and update the `server-dir:` TODO in `.github/workflows/deploy.yml` to match your actual hosting folder.
 5. **A GitHub remote**, if you want CI/CD deploys — run `git remote add origin <your-repo-url>` and push yourself (not done here, per instructions).
-6. **Real contact details.** Phone number, WhatsApp number and email in `common.py`-derived output are placeholders (`+65 8123 4567` / `enquiries@bedokriseresidences.sg`) — swap for your actual sales line.
+6. **Real contact details.** Phone number, WhatsApp number and email in `common.py`-derived output are placeholders (`+65 8123 4567` / `enquiries@bedokrise-residences.com.sg`) — swap for your actual sales line.
 7. **A lead-capture backend.** The forms on `showflat.html` and `contact.html` are static markup (`onsubmit="return false;"`) — wire them up to your CRM, a form service, or a serverless endpoint.
 
 ## Site structure

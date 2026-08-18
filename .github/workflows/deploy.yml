@@ -21,7 +21,7 @@ jobs:
           # Change this to match your domain's folder in Site Tools -> Website -> Domain
           # Primary domain: public_html/
           # Addon domain:   your-addon-domain/public_html/
-          server-dir: bedokrise-residences.com.sg/public_html/  # confirm this matches the addon domain's folder in SiteGround -> Site Tools -> Website -> Domain
+          server-dir: bedokrise-residences.com.sg/public_html/  # confirmed against SiteGround File Manager: addon domain bedokrise-residences.com.sg/public_html/
           exclude: |
             **/.git*
             **/.git*/**

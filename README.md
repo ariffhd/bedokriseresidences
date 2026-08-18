@@ -36,14 +36,14 @@ Note for context: while researching, a web search turned up an already-existing,
 
 ## What was NOT done (per constraints)
 
-- **No images, renders, or logos were downloaded from anywhere, and no placeholder graphics were left in their place.** The site previously used hand-built CSS/SVG placeholder blocks (captioned "Artist's Impression — Placeholder, replace with official image") everywhere the source template would have a photo, artist's impression, or masterplan render. Those blocks — and the sections built around them — have since been removed entirely, with surrounding layouts (two-column grids, hero backdrops, etc.) restructured so the remaining copy reads cleanly at full width. The site currently ships with **no photos, renders, or maps at all**; these will be added once real assets are available from Allgreen Properties.
+- **No images, renders, or logos were downloaded from anywhere.** Every place the source template would have a photo, artist's impression, or masterplan render instead uses a hand-built CSS/SVG placeholder block with a visible caption: *"Artist's Impression — Placeholder, replace with official image."*
 - **No Allgreen Properties logo was copied.** The footer and developer page use a plain text/CSS wordmark ("ALLGREEN PROPERTIES") labelled "Wordmark placeholder."
 - **No sentences were copied** from the Thomson Reserve source template or from any competitor Bedok Rise Residences site. All copy was written fresh; only plain factual data points (which are not copyrightable) were reused.
 - No git remote was added, no GitHub repo was created, and nothing was pushed — that requires your own GitHub account and explicit go-ahead.
 
 ## What you still need to supply before this goes live
 
-1. **Real photography / renders / logo.** The image/photo sections were removed outright rather than left as placeholders, so once Allgreen releases official artist's impressions, site plans, or masterplan renders, they'll need to be added back into the relevant pages (hero banners, the project-overview/neighbourhood/developer/floor-plan/site-plan/location/landmark sections, etc.) as real `<img>` assets — there's no `.art-placeholder` block left to swap out. Also swap the footer/developer-page wordmark for the real Allgreen Properties logo file.
+1. **Real photography / renders / logo.** Replace every `.art-placeholder` block (search for `art-placeholder` across the HTML files) with actual artist's impressions once Allgreen releases them, and swap the footer/developer-page wordmark for the real Allgreen Properties logo file.
 2. **Confirm domain registration.** The site is wired for `bedokrise-residences.com.sg` — make sure it's actually registered/controlled by you before going live (see "Domain" note above).
 3. **Real pricing, unit mix, site plan and floor plans** once the developer releases them — every page that currently says "TBC" has a clearly marked spot to drop in the real figures.
 4. **SiteGround (or chosen host) FTPS secrets** for the GitHub Actions deploy workflow: `SITEGROUND_FTP_SERVER`, `SITEGROUND_FTP_USERNAME`, `SITEGROUND_FTP_PASSWORD` as repo secrets, and update the `server-dir:` TODO in `.github/workflows/deploy.yml` to match your actual hosting folder.

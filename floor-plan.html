@@ -133,6 +133,14 @@
   .card h3 { font-size: 20px; margin-bottom: 10px; }
   .card p { font-size: 14.5px; color: var(--text-light); line-height: 1.75; }
 
+  /* ── ART PLACEHOLDER (no real imagery) ── */
+  .art-placeholder { position: relative; background: linear-gradient(135deg, var(--marine-mid) 0%, var(--marine) 45%, var(--marine-deep) 100%); border: 1px solid var(--border); overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 260px; }
+  .art-placeholder svg { opacity: 0.55; width: 62%; max-width: 320px; }
+  .art-placeholder .art-caption { position: absolute; left: 0; right: 0; bottom: 0; background: rgba(7,27,38,0.82); color: var(--gold-pale); font-size: 11.5px; letter-spacing: 0.05em; text-align: center; padding: 10px 14px; text-transform: uppercase; border-top: 1px solid rgba(221,185,119,0.3); }
+  .art-placeholder.wide { aspect-ratio: 16/8; }
+  .art-placeholder.square { aspect-ratio: 1/1; }
+  .art-placeholder.tall { aspect-ratio: 4/5; }
+  .art-placeholder.map { aspect-ratio: 16/10; background: linear-gradient(135deg, #143244 0%, #0e2634 100%); }
 
   /* ── TABLES ── */
   .data-table { width: 100%; border-collapse: collapse; margin-top: 24px; font-size: 14.5px; }
@@ -279,11 +287,17 @@
 
 <section class="silo alt">
   <div class="container">
-    <div>
+    <div class="two-col">
+      <div><div class="art-placeholder wide">
+      <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ddb977" stroke-width="1.2"><rect x="20" y="20" width="160" height="90"/><line x1="20" y1="65" x2="180" y2="65"/><line x1="90" y1="20" x2="90" y2="110"/><line x1="135" y1="65" x2="135" y2="110"/><rect x="40" y="35" width="30" height="20"/></svg>
+      <div class="art-caption">Artist's Impression — Placeholder, replace with official image</div>
+    </div></div>
+      <div>
         <div class="eyebrow"><div class="eyebrow-line"></div><span>What To Look Out For</span></div>
         <h2>Evaluating Floor Plans When They Launch</h2>
         <p class="silo-lead">When Bedok Rise Residences' official floor plans are released, prospective buyers may wish to assess efficiency (liveable area versus balcony/AC ledge), bedroom proportions, natural cross-ventilation, and orientation relative to the Tanah Merah MRT link and any future retail podium.</p>
         <p class="silo-lead">Units facing the MRT side may offer greater convenience but potentially more train and road noise, while units facing away may trade convenience for quiet. These are typical trade-offs at doorstep-MRT developments and worth discussing with a sales representative once units are released.</p>
+      </div>
     </div>
   </div>
 </section>

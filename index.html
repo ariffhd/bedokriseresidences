@@ -133,6 +133,14 @@
   .card h3 { font-size: 20px; margin-bottom: 10px; }
   .card p { font-size: 14.5px; color: var(--text-light); line-height: 1.75; }
 
+  /* ── ART PLACEHOLDER (no real imagery) ── */
+  .art-placeholder { position: relative; background: linear-gradient(135deg, var(--marine-mid) 0%, var(--marine) 45%, var(--marine-deep) 100%); border: 1px solid var(--border); overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 260px; }
+  .art-placeholder svg { opacity: 0.55; width: 62%; max-width: 320px; }
+  .art-placeholder .art-caption { position: absolute; left: 0; right: 0; bottom: 0; background: rgba(7,27,38,0.82); color: var(--gold-pale); font-size: 11.5px; letter-spacing: 0.05em; text-align: center; padding: 10px 14px; text-transform: uppercase; border-top: 1px solid rgba(221,185,119,0.3); }
+  .art-placeholder.wide { aspect-ratio: 16/8; }
+  .art-placeholder.square { aspect-ratio: 1/1; }
+  .art-placeholder.tall { aspect-ratio: 4/5; }
+  .art-placeholder.map { aspect-ratio: 16/10; background: linear-gradient(135deg, #143244 0%, #0e2634 100%); }
 
   /* ── TABLES ── */
   .data-table { width: 100%; border-collapse: collapse; margin-top: 24px; font-size: 14.5px; }
@@ -283,13 +291,19 @@
 
 <section class="silo" id="overview">
   <div class="container">
-    <div>
-      <div class="eyebrow"><div class="eyebrow-line"></div><span>Project Overview</span></div>
-      <h2>A Rare Doorstep-MRT Address in Singapore's East</h2>
-      <p class="silo-lead">Bedok Rise Residences sits on a 2.03-hectare parcel along New Upper Changi Road, awarded to Allgreen Properties in December 2025 for S$464.8 million (approximately S$1,330 psf per plot ratio) after a tender that drew ten bidders. Subject to final approvals, the site is expected to yield around 380 private residential units.</p>
-      <p class="silo-lead">What sets the site apart from its neighbours &mdash; Sceneca Residence, Urban Vista, The Glades and The Tanamera, all of which line the same stretch of New Upper Changi Road &mdash; is that it is the last remaining GLS plot in the precinct offering sheltered, direct access into Tanah Merah MRT Station. For a generation of buyers who prioritise a dry, covered walk to the train over almost anything else, that is a genuinely scarce feature.</p>
-      <p class="silo-lead">Tanah Merah (EW4) is where the East-West Line splits for the Airport Branch Line, putting Changi Airport roughly nine minutes away by train with no need to leave the paid area. The same station carries residents west into the CBD, Raffles Place and Marina Bay in well under half an hour off-peak.</p>
-      <a href="https://bedokrise-residences.com.sg/location-map.html" class="btn-outline" style="border-color:var(--border);color:var(--marine);margin-top:12px;display:inline-block;">View Full Location Map &rarr;</a>
+    <div class="two-col">
+      <div>
+        <div class="eyebrow"><div class="eyebrow-line"></div><span>Project Overview</span></div>
+        <h2>A Rare Doorstep-MRT Address in Singapore's East</h2>
+        <p class="silo-lead">Bedok Rise Residences sits on a 2.03-hectare parcel along New Upper Changi Road, awarded to Allgreen Properties in December 2025 for S$464.8 million (approximately S$1,330 psf per plot ratio) after a tender that drew ten bidders. Subject to final approvals, the site is expected to yield around 380 private residential units.</p>
+        <p class="silo-lead">What sets the site apart from its neighbours &mdash; Sceneca Residence, Urban Vista, The Glades and The Tanamera, all of which line the same stretch of New Upper Changi Road &mdash; is that it is the last remaining GLS plot in the precinct offering sheltered, direct access into Tanah Merah MRT Station. For a generation of buyers who prioritise a dry, covered walk to the train over almost anything else, that is a genuinely scarce feature.</p>
+        <p class="silo-lead">Tanah Merah (EW4) is where the East-West Line splits for the Airport Branch Line, putting Changi Airport roughly nine minutes away by train with no need to leave the paid area. The same station carries residents west into the CBD, Raffles Place and Marina Bay in well under half an hour off-peak.</p>
+        <a href="https://bedokrise-residences.com.sg/location-map.html" class="btn-outline" style="border-color:var(--border);color:var(--marine);margin-top:12px;display:inline-block;">View Full Location Map &rarr;</a>
+      </div>
+      <div><div class="art-placeholder tall">
+      <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ddb977" stroke-width="1.4"><rect x="20" y="55" width="18" height="55"/><rect x="42" y="35" width="18" height="75"/><rect x="64" y="65" width="18" height="45"/><rect x="90" y="20" width="20" height="90"/><rect x="114" y="48" width="18" height="62"/><rect x="136" y="60" width="18" height="50"/><rect x="158" y="40" width="18" height="70"/><line x1="10" y1="110" x2="190" y2="110"/><path d="M90 20 L100 8 L110 20" /></svg>
+      <div class="art-caption">Artist's Impression — Placeholder, replace with official image</div>
+    </div></div>
     </div>
   </div>
 </section>
@@ -311,12 +325,18 @@
 
 <section class="silo">
   <div class="container">
-    <div>
-      <div class="eyebrow"><div class="eyebrow-line"></div><span>The Neighbourhood</span></div>
-      <h2>Living Between Bedok, Tanah Merah &amp; Simei</h2>
-      <p class="silo-lead">Bedok Rise Residences sits in a well-established residential corridor that has quietly become one of District 16's more active new-launch clusters, following recent projects such as Sceneca Residence and Bagnall Haus. Households here draw on Eastpoint Mall and Simei's amenities to the east, Bedok Mall and Djitsun Mall Bedok to the west, and the wide green spine of East Coast Park to the south.</p>
-      <p class="silo-lead">Families have a choice of established schools within the surrounding neighbourhood, while students commute easily to Temasek Polytechnic and the Singapore University of Technology and Design (SUTD), both a short ride away. Working professionals gain fast access to Changi Business Park and Changi Airport, in addition to the CBD via the East-West Line.</p>
-      <a href="https://bedokrise-residences.com.sg/new-upper-changi-road.html" class="btn-outline" style="border-color:var(--border);color:var(--marine);margin-top:4px;display:inline-block;">Read The New Upper Changi Road Guide &rarr;</a>
+    <div class="two-col">
+      <div><div class="art-placeholder map">
+      <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ddb977" stroke-width="1.2"><circle cx="100" cy="60" r="8" fill="#ddb977" stroke="none"/><path d="M100 68 L100 100" stroke-dasharray="3 3"/><path d="M20 40 L60 20 L140 30 L180 55 L170 100 L110 120 L40 105 Z"/><path d="M20 40 L180 55" stroke-dasharray="2 4"/><path d="M60 20 L40 105" stroke-dasharray="2 4"/></svg>
+      <div class="art-caption">Artist's Impression — Placeholder, replace with official image</div>
+    </div></div>
+      <div>
+        <div class="eyebrow"><div class="eyebrow-line"></div><span>The Neighbourhood</span></div>
+        <h2>Living Between Bedok, Tanah Merah &amp; Simei</h2>
+        <p class="silo-lead">Bedok Rise Residences sits in a well-established residential corridor that has quietly become one of District 16's more active new-launch clusters, following recent projects such as Sceneca Residence and Bagnall Haus. Households here draw on Eastpoint Mall and Simei's amenities to the east, Bedok Mall and Djitsun Mall Bedok to the west, and the wide green spine of East Coast Park to the south.</p>
+        <p class="silo-lead">Families have a choice of established schools within the surrounding neighbourhood, while students commute easily to Temasek Polytechnic and the Singapore University of Technology and Design (SUTD), both a short ride away. Working professionals gain fast access to Changi Business Park and Changi Airport, in addition to the CBD via the East-West Line.</p>
+        <a href="https://bedokrise-residences.com.sg/new-upper-changi-road.html" class="btn-outline" style="border-color:var(--border);color:var(--marine);margin-top:4px;display:inline-block;">Read The New Upper Changi Road Guide &rarr;</a>
+      </div>
     </div>
   </div>
 </section>

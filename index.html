@@ -220,6 +220,73 @@
   .prose a { color: var(--marine); text-decoration: underline; }
 
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://bedokrise-residences.com.sg/#website",
+      "name": "Bedok Rise Residences",
+      "url": "https://bedokrise-residences.com.sg/",
+      "description": "Independent project information and resource hub for Bedok Rise Residences, an upcoming new launch condominium on New Upper Changi Road, District 16, Singapore.",
+      "publisher": { "@id": "https://bedokrise-residences.com.sg/#organization" }
+    },
+    {
+      "@type": "ApartmentComplex",
+      "@id": "https://bedokrise-residences.com.sg/#project",
+      "name": "Bedok Rise Residences",
+      "description": "Bedok Rise Residences is an upcoming new launch condominium on New Upper Changi Road, District 16, Tanah Merah, Singapore. Estimated ~380 units on a 2.03-hectare Government Land Sale site awarded to Allgreen Properties in December 2025 for S$464.8 million. Estimated launch H2 2027.",
+      "url": "https://bedokrise-residences.com.sg/",
+      "numberOfAccommodationUnits": 380,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "New Upper Changi Road",
+        "addressLocality": "Bedok",
+        "addressRegion": "Singapore",
+        "addressCountry": "SG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 1.3262078,
+        "longitude": 103.9472686
+      },
+      "containedInPlace": {
+        "@type": "AdministrativeArea",
+        "name": "District 16, Singapore"
+      },
+      "sameAs": [
+        "https://maps.app.goo.gl/YWMkHaPYJZhBZZPo9"
+      ],
+      "developer": {
+        "@type": "Organization",
+        "name": "Allgreen Properties Limited",
+        "url": "https://www.allgreen.com.sg"
+      }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://bedokrise-residences.com.sg/#aboutpage",
+      "url": "https://bedokrise-residences.com.sg/",
+      "name": "Bedok Rise Residences - Independent Project Information and Resource Hub",
+      "about": { "@id": "https://bedokrise-residences.com.sg/#project" },
+      "isPartOf": { "@id": "https://bedokrise-residences.com.sg/#website" },
+      "description": "The official project information resource for Bedok Rise Residences on New Upper Changi Road, District 16. Covers the developer, tenure, estimated unit count, location, nearby MRT and schools, and stamp duty guidance.",
+      "datePublished": "2026-08-18",
+      "dateModified": "2026-08-19"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bedokrise-residences.com.sg/#organization",
+      "name": "Bedok Rise Residences Information Hub",
+      "url": "https://bedokrise-residences.com.sg/",
+      "email": "enquiries@bedokrise-residences.com.sg",
+      "telephone": "+65 8123 4567",
+      "description": "Official project information and enquiry contact for Bedok Rise Residences, consolidating verified developer, location and timeline details in one resource hub."
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="topbar">
@@ -276,7 +343,7 @@
         <a href="https://bedokrise-residences.com.sg/showflat.html" class="btn-primary">Register Interest &amp; VVIP Updates</a>
         <a href="#overview" class="btn-outline">Explore The Project</a>
       </div>
-      <div class="hero-updated">Last Updated: <strong id="last-updated-date"></strong> &nbsp;&middot;&nbsp; Estimated launch H2 2027 &mdash; pricing not yet released. This is an independent information microsite, not the developer's official site.
+      <div class="hero-updated">Last Updated: <strong id="last-updated-date"></strong> &nbsp;&middot;&nbsp; Estimated launch H2 2027 &mdash; pricing not yet released.
       <script>
         (function(){
           var d = new Date();
